@@ -57,7 +57,7 @@ git push -u origin main
 
 3. **الإعدادات التلقائية:**
    - Build command: `npm run build`
-   - Publish directory: `.output/public`
+   - Publish directory: `dist`
    - Node version: `20`
 
 ---
@@ -71,7 +71,7 @@ npm run build
 
 2. **اذهب إلى [Netlify Drop](https://app.netlify.com/drop)**
 
-3. **اسحب مجلد `.output/public` وأفلته في الصفحة**
+3. **اسحب مجلد `dist` وأفلته في الصفحة**
 
 ---
 
