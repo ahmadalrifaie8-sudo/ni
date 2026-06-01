@@ -5,7 +5,7 @@
   # أمر البناء
   command = "npm run build"
   # مجلد النشر
-  publish = ".output/public"
+  publish = "dist"
 
 [build.environment]
   # إصدار Node.js
