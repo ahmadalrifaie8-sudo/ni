@@ -1,0 +1,34 @@
+# Netlify Configuration
+# مركز الرؤية للابتكار الرقمي - The Vision
+
+[build]
+  # أمر البناء
+  command = "npm run build"
+  # مجلد النشر
+  publish = ".output/public"
+
+[build.environment]
+  # إصدار Node.js
+  NODE_VERSION = "20"
+
+# إعدادات إعادة التوجيه للـ SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# إعدادات التخزين المؤقت
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
